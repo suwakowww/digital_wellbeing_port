@@ -8,7 +8,7 @@ Enable Digital Wellbeing's features on AOSP-like ROMs.
 
 为类 AOSP 刷机包启用 Digital Wellbeing 的功能。
 
-Tested on Xiaomi Mi 6X (wayne) with AOSP 9.0 v107 by phhusson.
+Tested on Xiaomi Mi 6X (wayne) by me with phhusson's AOSP 9.0 v107.
 
 ## Features / 功能
 
@@ -19,7 +19,7 @@ Tested on Xiaomi Mi 6X (wayne) with AOSP 9.0 v107 by phhusson.
 
 * Your phone's custom ROM is Android 9 (Pie) / 你的手机自定义 ROM 为 Android 9（Pie）
 * Your phone has installed GAPPS / 你的手机已安装 GAPPS
-* Your Magisk is v17.0 or later
+* Your Magisk is v17.0 or later / 你的 Magisk 版本是 v17.0 或更高
 
 ## Changelog / 更新日志
 
