@@ -8,6 +8,8 @@ Enable Digital Wellbeing's features on AOSP-like ROMs.
 
 为类 AOSP 刷机包启用 Digital Wellbeing 的功能。
 
+Tested on Xiaomi Mi 6X (wayne) with AOSP 9.0 v107 by phhusson.
+
 ## Features / 功能
 
 * App Timer / 应用定时器
@@ -22,3 +24,9 @@ Enable Digital Wellbeing's features on AOSP-like ROMs.
 ## Changelog / 更新日志
 
 * v1 Initial Release
+
+## Credits / 鸣谢
+
+* TadiT7 for Xiaomi Mi A2 (jasmine) rom dumps.
+* phhusson for AOSP 9.0 GSI Images.
+* topjohnwu for Magisk.
