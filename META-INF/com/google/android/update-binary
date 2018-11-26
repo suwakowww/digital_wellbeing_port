@@ -64,9 +64,7 @@ api_level_arch_detect
 
 # Check API here
 if [ $API -lt 28 ]; then
-  ui_print "This module requires Android 9."
-  ui_print "Aborting!"
-  exit 1
+  abort "This module requires Android 9.  Aborting!"
 fi
 
 # Check Google framework here
@@ -74,14 +72,10 @@ if ls /system/priv-app | grep -iq GoogleServicesFramework; then
   ui_print "GApps detected!"
   # Check for installed app here
   if ls /system/priv-app | grep -iq Wellbeing; then
-    ui_print "Digital Wellbeing already installed!"
-    ui_print "You don't have to install this module."
-    exit 1
+    abort "Digital Wellbeing already installed!  You don't have to install this module."
   fi
 else
-  ui_print "This module requires GApps installed."
-  ui_print "Aborting!"
-  exit 1
+  abort "This module requires GApps installed.  Aborting!"
 fi
 
 # Setup busybox and binaries
