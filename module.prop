@@ -1,7 +1,7 @@
 id=digitalwellbeingport
 name=Digital Wellbeing Port
-version=v1
-versionCode=1
+version=v1.01
+versionCode=101
 author=suwakowww
 description=Digital Wellbeing apps for AOSP-like roms. / 类原生 rom 用的数字健康。
 minMagisk=17000

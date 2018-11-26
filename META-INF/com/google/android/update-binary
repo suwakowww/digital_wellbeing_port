@@ -62,6 +62,28 @@ api_level_arch_detect
 # You can get the Android API version from $API, the CPU architecture from $ARCH
 # Useful if you are creating Android version / platform dependent mods
 
+# Check API here
+if [ $API -lt 28 ]; then
+  ui_print "This module requires Android 9."
+  ui_print "Aborting!"
+  exit 1
+fi
+
+# Check Google framework here
+if ls /system/priv-app | grep -iq GoogleServicesFramework; then
+  ui_print "GApps detected!"
+  # Check for installed app here
+  if ls /system/priv-app | grep -iq Wellbeing; then
+    ui_print "Digital Wellbeing already installed!"
+    ui_print "You don't have to install this module."
+    exit 1
+  fi
+else
+  ui_print "This module requires GApps installed."
+  ui_print "Aborting!"
+  exit 1
+fi
+
 # Setup busybox and binaries
 $BOOTMODE && boot_actions || recovery_actions
 
