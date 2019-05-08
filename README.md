@@ -1,59 +1,7 @@
-# Digital Wellbeing Port
+# Magisk Installer
 
-Google Digital Wellbeing for AOSP-like ROMs.
+**Update `README.md` if you want to submit your module to the online repo!**
 
-Enable Digital Wellbeing's features on AOSP-like ROMs.
+For more information about how to use this module installer, please refer to [documentations](https://topjohnwu.github.io/Magisk/guides.html)
 
-Tested on Xiaomi Mi 6X (wayne) by me with phhusson's AOSP 9.0 v107.
-
-## Features
-
-* App Timer
-* Wind down
-
-## Requirements
-
-* Your phone's custom ROM is Android 9 (Pie)
-* Your phone has installed GApps
-* Your Magisk is v17.0 or later
-
-## Changelog
-
-* v1.01 Added detection for Android API and GApps.
-* v1 Initial Release
-
-## Credits
-
-* TadiT7 for Xiaomi Mi A2 (jasmine) rom dumps.
-* phhusson for AOSP 9.0 GSI Images.
-* topjohnwu for Magisk.
-
-# 数字健康移植版
-
-适用于类 AOSP 刷机包的 Google 数字健康。
-
-为类 AOSP 刷机包启用 Digital Wellbeing 的功能。
-
-已在小米 6X 且在 phhusson 的 AOSP 9.0 v107 上测试通过。
-
-## 功能
-
-* 应用定时器
-* 放松模式
-
-## 要求
-
-* 你的手机自定义 ROM 为 Android 9（Pie）
-* 你的手机已安装 GApps
-* 你的 Magisk 版本是 v17.0 或更高
-
-## 更新日志
-
-* v1.01 增加针对 Android API 以及 GApps 的检测。
-* v1 最初版本
-
-## 鸣谢
-
-* TadiT7 提供了小米 A2（jasmine）的 rom 转储。
-* phhusson 提供了 AOSP 9.0 GSI 映像。
-* topjohnwu 提供了 Magisk。
+If you are not familiar with the Markdown syntax, you can start by experimenting on GitHub's online Markdown editor, which will let you preview before publishing. If you need more help, the [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) will be handy.
