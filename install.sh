@@ -162,7 +162,7 @@ check_android_api() {
 # Check API here
 if [ $API -lt 28 ]; then
   ui_print "E: This module requires Android 9."
-  abort "E: Aborting!"
+  fail_install "E: Aborting!"
 else
   ui_print "I: Android API check passed."
 fi
@@ -172,7 +172,7 @@ check_gapps() {
   # Check GApps here
   if ! ls /system/priv-app | grep -iq GoogleServicesFramework; then
     ui_print "E: This module requires GApps installed."
-    abort "E: Aborting!"
+    fail_install "E: Aborting!"
   else
     ui_print "I: GApps check passed."
   fi
@@ -184,16 +184,21 @@ check_install() {
     if ls /system/priv-app | grep -iq Wellbeing; then
       ui_print "E: Digital Wellbeing already installed!"
       ui_print "E: You don't have to install this module."
-      abort "E:Just find it on Setting page."
+      fail_install "E:Just find it on Setting page."
     elif ls /data/app | grep -aiq 'com.google.android.apps.wellbeing'; then
       ui_print "E: Digital Wellbeing already installed!"
       ui_print "E: But installed it with a wrong way."
       ui_print "E: You should uninstall it first."
-      abort "E: Aborting!"
+      fail_install "E: Aborting!"
     else
       ui_print "I: Check passed, installing..."
     fi
   else
     ui_print "I: Old version detected, upgrading..."
   fi
+}
+
+fail_install() {
+  imageless_magisk || unmount_magisk_img
+  abort $1
 }
